@@ -1,0 +1,6 @@
+helm repo add kafka-topics-ui https://dhiatn.github.io/helm-kafka-topics-ui
+helm install kafka-topics-ui -f helm-kafka-topic-ui-values.yaml kafka-topics-ui/kafka-topics-ui
+
+git clone https://github.com/confluentinc/cp-helm-charts.git
+helm install kafka-rest cp-helm-charts/charts/cp-kafka-rest -f helm-kafka-rest-values.yaml
+
